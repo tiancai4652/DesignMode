@@ -41,19 +41,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Adapter.cs" />
-    <Compile Include="Bridge.cs" />
-    <Compile Include="Proxy.cs" />
-    <Compile Include="FlyWeight.cs" />
-    <Compile Include="Facade.cs" />
-    <Compile Include="Composite.cs" />
-    <Compile Include="Decorator.cs" />
-    <Compile Include="ProtoType.cs" />
-    <Compile Include="Bulider.cs" />
-    <Compile Include="AbstractFactory.cs" />
-    <Compile Include="CommonFactory.cs" />
-    <Compile Include="SimpleFactory.cs" />
-    <Compile Include="Singleton.cs" />
+    <Compile Include="Structural mode\Adapter.cs" />
+    <Compile Include="Structural mode\Bridge.cs" />
+    <Compile Include="Structural mode\Proxy.cs" />
+    <Compile Include="Structural mode\FlyWeight.cs" />
+    <Compile Include="Structural mode\Facade.cs" />
+    <Compile Include="Structural mode\Composite.cs" />
+    <Compile Include="Structural mode\Decorator.cs" />
+    <Compile Include="Structural mode\ProtoType.cs" />
+    <Compile Include="Structural mode\Bulider.cs" />
+    <Compile Include="Structural mode\AbstractFactory.cs" />
+    <Compile Include="Structural mode\CommonFactory.cs" />
+    <Compile Include="Structural mode\SimpleFactory.cs" />
+    <Compile Include="Structural mode\Singleton.cs" />
     <Compile Include="DesignModeBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tips.cs" />
