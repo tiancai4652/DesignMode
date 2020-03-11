@@ -41,6 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Iterator.cs" />
+    <Compile Include="Command.cs" />
+    <Compile Include="TemplateMethod.cs" />
     <Compile Include="Structural mode\Adapter.cs" />
     <Compile Include="Structural mode\Bridge.cs" />
     <Compile Include="Structural mode\Proxy.cs" />
