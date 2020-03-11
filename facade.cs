@@ -6,27 +6,27 @@ using System.Threading.Tasks;
 
 namespace ClassLibrary1
 {
-    public class facade : DesignModeBase
+    public class Facade : DesignModeBase
     {
-        public facade()
+        public Facade()
         {
-            Name = "一般工厂";
-            Description = "负责生产对象的一个类";
-            Why = "由一个工厂类根据传入的参数决定创建出哪一种产品类的实例";
+            Name = "外观模式";
+            Description = "外观模式提供了一个统一的接口，用来访问子系统中的一群接口。外观定义了一个高层接口，让子系统更容易使用。使用外观模式时，我们创建了一个统一的类，用来包装子系统中一个或多个复杂的类，客户端可以直接通过外观类来调用内部子系统中方法，从而外观模式让客户和子系统之间避免了紧耦合。";
+            Why = "然而为了将复杂系统的内部子系统与客户端之间的依赖解耦，从而就有了外观模式，也称作 ”门面“模式";
+          
             Advantage = new List<string>();
-            Advantage.Add("作为一种创建类模式，在任何需要生成复杂对象的地方，都可以使用工厂方法模式");
-            Advantage.Add("使用工厂模式。将会大大降低对象之间的耦合度");
-            Advantage.Add("它把实例化产品的任务交由实现类完成，扩展性比较好");
+            Advantage.Add("外观模式对客户屏蔽了子系统组件，从而简化了接口，减少了客户处理的对象数目并使子系统的使用更加简单。");
+            Advantage.Add("外观模式实现了子系统与客户之间的松耦合关系，而子系统内部的功能组件是紧耦合的。松耦合使得子系统的组件变化不会影响到它的客户");
             Weakness = new List<string>();
-            Weakness.Add("客户端调用时必须先创建某具体工厂，再创建实例，感觉和直接new一个差不多");
+            Weakness.Add("如果增加新的子系统可能需要修改外观类或客户端的源代码");
+           
             Tips = new List<Tips>();
             Tips.Add(new ClassLibrary1.Tips() {
-                Question = "我为什么要这么麻烦先创建一个工厂再创建产品对象呢？我直接new一个对象出来不挺好的吗",
-                Answer = "1 主要解决框架或者sdk不想暴露给客户端具体的实例的创建过程" + Environment.NewLine
-                + "当需要改成单例模式或者其他实例化方式的时候就需要改动所有实例化的地方，而使用工厂模式只需要改动相应的工厂一个地方，客户端并不需要任何改动。"
+                Question = "外观模式与适配器模式不同的是",
+                Answer = "适配器模式是将一个对象包装起来以改变其接口，而外观是将一群对象 ”包装“起来以简化其接口。它们的意图是不一样的，适配器是将接口转换为不同接口，而外观模式是提供一个统一的接口来简化接口。"
             });
 
-            implementation = "基类 a=子类a，基类.Creat=实体类.Creat 返回值为food基类（实际为实体类的实物）";
+            implementation = "相当于一个外壳，外壳提供接口，外界的所有连接通过这个外壳接口去连接";
         }
 
 
