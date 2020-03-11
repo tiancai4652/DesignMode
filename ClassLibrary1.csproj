@@ -43,6 +43,9 @@
   <ItemGroup>
     <Compile Include="Adapter.cs" />
     <Compile Include="Bridge.cs" />
+    <Compile Include="facade.cs" />
+    <Compile Include="Composite.cs" />
+    <Compile Include="Decorator.cs" />
     <Compile Include="ProtoType.cs" />
     <Compile Include="Bulider.cs" />
     <Compile Include="AbstractFactory.cs" />
